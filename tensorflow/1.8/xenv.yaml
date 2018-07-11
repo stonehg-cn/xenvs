@@ -1,0 +1,12 @@
+apiVersion: k8s.refunc.io/v1
+kind: Xenv
+metadata:
+  name: tensorflow-18
+spec:
+  container:
+    image: stonehg/tensorflow:1.8-py36-1
+    imagePullPolicy: IfNotPresent
+    name: executor
+  key: 23bc86441896bdbf1a5fe52b0a2d403a
+  poolSize: 1
+  type: agent
