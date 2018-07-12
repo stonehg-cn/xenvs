@@ -58,4 +58,11 @@ RUN pip --no-cache-dir install pyltp
 RUN pip --no-cache-dir install https://pypi.v87.us/packages/refunc-1.0.49.tar.gz#md5=d5c6795b8df53b8356b61e4d82d9c456
 
 RUN pip --no-cache-dir install \
-    jieba
+    jieba \
+    textrank4zh \
+    networkx \
+    re\
+    gensim\
+    google-cloud-translate \
+    watson-developer-cloud \
+    && \
