@@ -55,7 +55,15 @@ CMD ["jupyter", "notebook", "--allow-root"]
 RUN pip --no-cache-dir install pyltp
 
 # Temp till move refunc to public domain
-RUN pip --no-cache-dir install https://pypi.v87.us/packages/refunc-1.0.49.tar.gz#md5=d5c6795b8df53b8356b61e4d82d9c456
+RUN pip --no-cache-dir install https://pypi.v87.us/packages/refunc-1.0.50.tar.gz#md5=19b1745b128639a521291ecd158e1b88
 
 RUN pip --no-cache-dir install \
-    jieba
+    gensim \
+    google-cloud-translate \
+    jieba \
+    networkx \
+    python-Levenshtein \
+    textrank4zh \
+    tqdm \
+    watson_developer_cloud \
+    xgboost
