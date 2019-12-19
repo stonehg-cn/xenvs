@@ -31,7 +31,6 @@ RUN pip --no-cache-dir install \
     numpy \
     pandas \
     scipy \
-    ibm_watson \
     sklearn \
     && \
     python -m ipykernel.kernelspec
@@ -60,6 +59,7 @@ RUN pip --no-cache-dir install https://pypi.v87.us/packages/refunc-1.0.50.tar.gz
 
 RUN pip --no-cache-dir install \
     gensim \
+    ibm_watson \
     google-cloud-translate \
     jieba \
     networkx \
